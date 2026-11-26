@@ -1,0 +1,23 @@
+appId: com.example.jetsnack
+---
+# Launch Jetsnack
+- launchApp:
+    clearState: true
+
+# Tap Home
+- tapOn:
+    point: "4%,92%"
+
+# Open Filters
+- tapOn: "Filters"
+
+# Verification if filter screen appears
+- assertVisible: 
+    point: "4%,22%"
+
+# Second verification if this is the filter screen
+- assertVisible: "Sort"
+
+- assertVisible: "Price"
+
+- assertVisible: "Category"
